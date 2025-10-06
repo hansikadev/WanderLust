@@ -7,17 +7,17 @@
 </head>
 <body>
     <form method="POST" action="/listings">
-        <input name="title" type="text" placeholder="enter title" />
+        <input name="listing[title]" type="text" placeholder="enter title" />
         <br/><br/>
-        <textarea name="description"  placeholder="enter description" ></textarea>
+        <textarea name="listing[description]"  placeholder="enter description" ></textarea>
         <br/><br/>
-        <input name="image" type="text" placeholder="enter image url" />
+        <input name="listing[image]" type="text" placeholder="enter image url" />
         <br/><br/>
-        <input name="price" type="number" placeholder="enter price" />
+        <input name="listing[price]" type="number" placeholder="enter price" />
         <br/><br/>
-        <input name="country" type="text" placeholder="enter country" />
+        <input name="listing[country]" type="text" placeholder="enter country" />
         <br/><br/>
-        <input name="location" type="text" placeholder="enter location" />
+        <input name="listing[location]" type="text" placeholder="enter location" />
         <br/><br/>
         <button>ADD</button>
     </form>

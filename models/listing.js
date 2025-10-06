@@ -10,15 +10,9 @@ const listingSchema=new Schema({
      image: {
         
         type: {
-            url: String,      // To store the image URL
-            filename: String  // To store the image filename
-        },
-       
-        default: {
-            url: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
-            filename: "listingimage"
-        },
-        
+            type: String,      // To store the image URL      
+            default: "https://images.unsplash.com/photo-1552733407-5d5c46c3bb3b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+        }, 
     },
     price:Number,        
     location:String,
