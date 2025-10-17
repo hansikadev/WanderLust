@@ -27,12 +27,16 @@ app.get('/',(req,res)=>{
     res.send("Hello World");
 });
 
-//index route
+//index route 
 app.get("/listings" ,async(req,res)=>{
     const allListings= await Listing.find({});
     res.render("listings/index",{allListings});
 });
 
+// app.get("/testing" ,async(req,res)=>{
+//     const allListings= await Listing.find({});
+//     res.render("testing/index",{allListings});
+// });
 
 //new route
 app.get("/listings/new",(req,res)=>{
